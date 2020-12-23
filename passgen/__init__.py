@@ -12,7 +12,7 @@ def make_password(n=20, punct=True):
 
     Returns
     -------
-    A password generated with the highest quality sources provided by the operating system
+    A password generated with the highest quality random number sources provided by the operating system
     """
     if punct:
         password = ''.join(
