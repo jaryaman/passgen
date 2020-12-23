@@ -14,14 +14,9 @@ def make_password(n=20, punct=True):
     -------
     A password generated with the highest quality random number sources provided by the operating system
     """
+    character_space = string.ascii_uppercase + string.digits + string.ascii_lowercase
     if punct:
-        password = ''.join(
-            random.SystemRandom().choice(
-                string.ascii_uppercase + string.digits + string.ascii_lowercase + string.punctuation) for _ in range(n)
-        )
-    else:
-        password = ''.join(
-            random.SystemRandom().choice(
-                string.ascii_uppercase + string.digits + string.ascii_lowercase) for _ in range(n)
-        )
+        character_space += string.punctuation
+
+    password = ''.join(random.SystemRandom().choice(character_space) for _ in range(n))
     return password
