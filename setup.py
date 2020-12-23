@@ -1,25 +1,18 @@
-#!/usr/bin/env python3
-
-
-import sys
-
 from setuptools import find_packages
 from setuptools import setup
 
-
 # *** functions ***
-
-def readToList(fileName):
-    return [line.strip() for line in open(fileName).readlines()]
 
 
 # *** main ***
 
 if '__main__' == __name__:
-
     setup(
-        packages             = find_packages(),
+        author='Juvid Aryaman',
+        author_email='j.aryaman25@gmail.com',
+        packages=find_packages(),
+        license=open('LICENSE.txt').read(),
+        long_description=open('README.md').read(),
+        name='gpgedit',
+        version='0.0.0',
     )
-
-sys.exit(0)
-
