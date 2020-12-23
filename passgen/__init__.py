@@ -1,3 +1,4 @@
+"""Cryptographically strong password generation"""
 import random
 import string
 
