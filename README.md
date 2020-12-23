@@ -14,3 +14,5 @@ pip install git+https://github.com/jaryaman/passgen@master
 from passgen import make_password
 make_password()
 ```
+
+A cryptographically strong password will then be returned.
