@@ -13,6 +13,6 @@ if '__main__' == __name__:
         packages=find_packages(),
         license=open('LICENSE.txt').read(),
         long_description=open('README.md').read(),
-        name='gpgedit',
+        name='passgen',
         version='0.0.0',
     )
