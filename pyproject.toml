@@ -1,6 +1,6 @@
 [project]
 name = "passgen"
-version = "0.1.0"
+version = "0.2.0"
 description = "Make cryptographically secure passwords in python"
 readme = "README.md"
 license = { file = "LICENSE.txt" }
